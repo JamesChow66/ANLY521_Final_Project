@@ -69,75 +69,75 @@ features_train, features_test, labels_train, labels_test = train_test_split(feat
 '''
 1.1 Linear SVM
 '''
-lsvc = LinearSVC()
+linearSVC = LinearSVC()
 # training the model
-lsvc.fit(features_train, labels_train)
-lsvc_pred_train = lsvc .predict(features_train)
-lsvc_pred = lsvc .predict(features_test)
+linearSVC.fit(features_train, labels_train)
+linearSVC_pred_train = linearSVC .predict(features_train)
+linearSVC_pred = linearSVC .predict(features_test)
 
 #metrics
-print('lsvc training data accuracy: ',lsvc.score(features_train, labels_train)) 
-print('lsvc testing data accuracy: ',lsvc.score(features_test, labels_test))  
+print('linear SVC training data accuracy: ',linearSVC.score(features_train, labels_train)) 
+print('linear SVC testing data accuracy: ',linearSVC.score(features_test, labels_test))  
 
-print('lsvc training Confusion matrix\n',confusion_matrix(labels_train,lsvc_pred_train))
-print('lsvc testing Confusion matrix\n',confusion_matrix(labels_test,lsvc_pred))
+print('linear SVC training Confusion matrix\n',confusion_matrix(labels_train,linearSVC_pred_train))
+print('linear SVC testing Confusion matrix\n',confusion_matrix(labels_test,linearSVC_pred))
 
-print('lsvc training Classification_report\n',classification_report(labels_train,lsvc_pred_train))
-print('lsvc testing Classification_report\n',classification_report(labels_test,lsvc_pred))
+print('linear SVC training Classification_report\n',classification_report(labels_train,linearSVC_pred_train))
+print('linear SVC testing Classification_report\n',classification_report(labels_test,linearSVC_pred))
 
 '''
 1.2 Gaussian Naive Bayes
 '''
-gnb = GaussianNB()
-gnb.fit(features_train, labels_train)
-gnb_pred_train = gnb .predict(features_train)
-gnb_pred = gnb .predict(features_test)
+GaussianNaiveBayes = GaussianNB()
+GaussianNaiveBayes.fit(features_train, labels_train)
+GaussianNaiveBayes_pred_train = GaussianNaiveBayes .predict(features_train)
+GaussianNaiveBayes_pred = GaussianNaiveBayes .predict(features_test)
 
 #metrics
-print('gnb training data accuracy: ',gnb.score(features_train, labels_train)) 
-print('gnb testing data accuracy: ',gnb.score(features_test, labels_test))  
+print('Gaussian Naive Bayes training data accuracy: ',GaussianNaiveBayes.score(features_train, labels_train)) 
+print('Gaussian Naive Bayes testing data accuracy: ',GaussianNaiveBayes.score(features_test, labels_test))  
 
-print('gnb training Confusion matrix\n',confusion_matrix(labels_train,gnb_pred_train))
-print('gnb testing Confusion matrix\n',confusion_matrix(labels_test,gnb_pred))
+print('Gaussian Naive Bayes training Confusion matrix\n',confusion_matrix(labels_train,GaussianNaiveBayes_pred_train))
+print('Gaussian Naive Bayes testing Confusion matrix\n',confusion_matrix(labels_test,GaussianNaiveBayes_pred))
 
-print('gnb training Classification_report\n',classification_report(labels_train,gnb_pred_train))
-print('gnb testing Classification_report\n',classification_report(labels_test,gnb_pred))
+print('Gaussian Naive Bayes training Classification_report\n',classification_report(labels_train,GaussianNaiveBayes_pred_train))
+print('Gaussian Naive Bayes testing Classification_report\n',classification_report(labels_test,GaussianNaiveBayes_pred))
 
 '''
 1.3 Logistic Regression
 '''
-lr = LogisticRegression()
-lr.fit(features_train, labels_train)
-lr_pred_train = lr .predict(features_train)
-lr_pred = lr .predict(features_test)
+LogisticReg = LogisticRegression()
+LogisticReg.fit(features_train, labels_train)
+LogisticReg_pred_train = LogisticReg .predict(features_train)
+LogisticReg_pred = LogisticReg .predict(features_test)
 
 #metrics
-print('lr training data accuracy: ',lr.score(features_train, labels_train)) 
-print('lr testing data accuracy: ',lr.score(features_test, labels_test))  
+print('Logistic Regression training data accuracy: ',LogisticReg.score(features_train, labels_train)) 
+print('Logistic Regression testing data accuracy: ',LogisticReg.score(features_test, labels_test))  
 
-print('lr training Confusion matrix\n',confusion_matrix(labels_train,lr_pred_train))
-print('lr testing Confusion matrix\n',confusion_matrix(labels_test,lr_pred))
+print('Logistic Regression training Confusion matrix\n',confusion_matrix(labels_train,LogisticReg_pred_train))
+print('Logistic Regression testing Confusion matrix\n',confusion_matrix(labels_test,LogisticReg_pred))
 
-print('lr training Classification_report\n',classification_report(labels_train,lr_pred_train))
-print('lr testing Classification_report\n',classification_report(labels_test,lr_pred))
+print('Logistic Regression training Classification_report\n',classification_report(labels_train,LogisticReg_pred_train))
+print('Logistic Regression testing Classification_report\n',classification_report(labels_test,LogisticReg_pred))
 
 '''
 1.4 Random Forest
 '''
-rfc = RandomForestClassifier(n_estimators = 10, random_state = 0)
-rfc.fit(features_train, labels_train)
-rfc_pred_train = rfc .predict(features_train)
-rfc_pred = rfc .predict(features_test)
+RandomForest = RandomForestClassifier(n_estimators = 10, random_state = 0)
+RandomForest.fit(features_train, labels_train)
+RandomForest_pred_train = RandomForest .predict(features_train)
+RandomForest_pred = RandomForest .predict(features_test)
 
 #metrics
-print('rfc training data accuracy: ',rfc.score(features_train, labels_train)) 
-print('rfc testing data accuracy: ',rfc.score(features_test, labels_test))  
+print('Random Forest training data accuracy: ',RandomForest.score(features_train, labels_train)) 
+print('Random Forest testing data accuracy: ',RandomForest.score(features_test, labels_test))  
 
-print('rfc training Confusion matrix\n',confusion_matrix(labels_train,rfc_pred_train))
-print('rfc testing Confusion matrix\n',confusion_matrix(labels_test,rfc_pred))
+print('Random Forest training Confusion matrix\n',confusion_matrix(labels_train,RandomForest_pred_train))
+print('Random Forest testing Confusion matrix\n',confusion_matrix(labels_test,RandomForest_pred))
 
-print('rfc training Classification_report\n',classification_report(labels_train,rfc_pred_train))
-print('rfc testing Classification_report\n',classification_report(labels_test,rfc_pred))
+print('Random Forest training Classification_report\n',classification_report(labels_train,RandomForest_pred_train))
+print('Random Forest testing Classification_report\n',classification_report(labels_test,RandomForest_pred))
 
 '''
 2. LSTM with Different Word Embedding
