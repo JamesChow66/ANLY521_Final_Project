@@ -8,7 +8,7 @@
 There are total 5 files in this repo:
 * ANLY521_FinalProject.ipynb	-	This Jupyter Notebook contain all experiments records
 * ANLY521_FinalProject.py 	-	This .py file contains all the code from  Jupyter Notebook
-* Sarcasm_Headlines_Dataset.json	-	Our dataset file
+* Sarcasm_Headlines_Dataset.json	-	Our dataset file. More details of this dataset can be found on https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection
 * ANLY521_Project_Report.pdf	-	Our project report
 * README.md	-	README file. The file you are looking right now.
 
