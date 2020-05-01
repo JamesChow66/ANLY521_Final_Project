@@ -8,7 +8,6 @@
 There are total 5 files in this repo:
 * ANLY521_FinalProject.ipynb	-	This file contains all the code
 * Sarcasm_Headlines_Dataset.json	-	Our dataset file
-* glove.6B.200d.txt	-	This is the pretrained GloVe word embbeding file, will be used for the 									    LSTM model part.
 * ANLY521_Project_Report.pdf	-	Our project report
 * README.md	-	README file. The file you are looking right now.
 
