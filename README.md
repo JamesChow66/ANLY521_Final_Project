@@ -21,8 +21,9 @@ To run this program simply navigate to this directory on terminal and type:
   ```python
   python ANLY521_FinalProject.py
   ```
+Or you can run it with Pycharm and Spyder, they should all work as expected.
 
-**Before running the code, you have to make sure following requirments are met:**
+**!!Before running the code, you have to make sure following requirments are met:!!**
 
 * **Machine Learning Models:**  You should not have any problem running this part as long as you have `Scikt-Learn`and `NLTK`packages installed. 
 
